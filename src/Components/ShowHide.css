@@ -1,0 +1,21 @@
+.center2{
+    margin: auto;
+    margin-top: 40px;
+    border: 2px solid black;
+    width: 75%;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.one{
+    width: 100%;
+    margin: auto;
+}
+
+#p{
+    width: 30%;
+    height: 50px;
+}

@@ -1,0 +1,45 @@
+
+.center{
+    margin: auto;
+    margin-top: 40px;
+    border: 2px solid black;
+    width: 75%;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.inner1{
+    width: 100%;
+}
+
+
+
+.x{
+    width: 20%;
+    display: inline-block;
+}
+
+.y{
+    width: 55%;
+    display: inline-block;
+}
+
+.z{
+    width: 20%;
+    display: inline-block;
+}
+
+#text{
+    width: 50%;
+}
+
+#one{
+    display: inline-block;
+}
+
+#two{
+    display: inline-block;
+}

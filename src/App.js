@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import MainCalculator from "./Components/MainCalculator";
+import ShowHide from "./Components/ShowHide";
+
 
 function App() {
+  const [myArray , setArray] = useState([])
+
+  const recieveData = (myData) => {
+    const newData = {...myData , id : Math.random().toString()};
+    console.log("In App.js");
+    console.log(newData);
+    setArray((prevState) => {
+      return [newData , ...prevState];
+    })
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <br/>
+      <MainCalculator getData = {recieveData}></MainCalculator>
+      <br/>
+      <ShowHide></ShowHide>
     </div>
   );
 }
